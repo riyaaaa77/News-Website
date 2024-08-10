@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+.pop
+{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid green;
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop .pop-container
+{
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.pop .pop-container .close
+{
+    /* width: 5%;
+    height: 5%; */
+    border: 2px solid red;
+    position: absolute;
+    margin-left: 97%;
+    margin-bottom: 46.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop .pop-container .close .btn
+{
+    margin-left:20%;
+}
+
+.pop .pop-container .close .close-icon
+{
+    font-size: xx-large;
+}
+
+.pop .pop-container .pop-content
+{
+    width: 70%;
+    height: 70%;
+    border: 2px solid red;
+    border-radius: 10px;
+
+}
+    </style>
+</head>
+<body>
+    <section class="pop">
+        <div class="pop-container">
+            <div class="close"><i class="fa-regular fa-circle-xmark close-icon"></i></div>
+           <div class="btn" ><button>Close</button></div>
+            <div class="pop-content">
+        </div>
+    </section>
+</body>
+</html>
